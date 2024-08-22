@@ -6,23 +6,23 @@ st.set_page_config(page_title="Hello")
 st.sidebar.success("Have Fun & Don't forget to rate us.")
 
 # Welcome page content
-st.title("Welcome to Your Personalized Recipe Recommender! 🍳")
+st.title("DATA CRUNCH ~ WEB APP")
+st.header("Welcome to Your Personalized Recipe Recommender! 🍳")
 
 st.subheader("Discover Delightful Meals with What You Have!")
 
 st.write("""
-Welcome to our Recipe Recommender System, where we turn your kitchen into a culinary adventure. Whether you’re a seasoned chef or just looking to whip up something quick and easy, our app is here to help you discover delicious recipes tailored to the ingredients you already have.
-""")
+Ready to transform your kitchen into a culinary playground? Whether you’re a seasoned chef or just looking to whip up something quick and tasty, our app is here to help. Discover delicious recipes tailored to the ingredients you already have on hand. Let’s make cooking fun and easy!""")
 
 
-# Define the base directory relative to the script's location
-base_dir = os.path.dirname(os.path.dirname(__file__))  # Go up one level from 'pages' directory
+# Base directory
+base_dir = os.path.dirname(os.path.dirname(__file__))
 
 # Define the paths to the images using relative paths
 image_path1 = os.path.join(base_dir, 'Deployment\Image', 'pic1.jpg')
 image_path2 = os.path.join(base_dir, 'Deployment\Image', 'pic2.jpg')
 
-# Displaying images correctly
+# cols.
 col1, col2 = st.columns(2)
 
 col1.header("#Yummy")
